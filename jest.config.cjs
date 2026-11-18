@@ -11,7 +11,6 @@ module.exports = {
       statements: 70,
     },
   },
-  extensionsToTreatAsEsm: ['.js'],
   transform: {},
   testPathIgnorePatterns: ['node_modules'],
 };
