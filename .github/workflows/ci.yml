@@ -12,19 +12,18 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 24.x]
+        node-version: [14.x, 24.x]
 
     steps:
       # Step 1: Check out the repository code
       - name: Checkout code
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v4.2.0
 
       # Step 2: Set up Node.js with the specified version
       - name: Set up Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4.1.0
+        uses: actions/setup-node@v4.2.0
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
 
       # Step 3: Install project dependencies
       - name: Install dependencies
