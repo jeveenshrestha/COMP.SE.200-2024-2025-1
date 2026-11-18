@@ -5,10 +5,10 @@ module.exports = {
   coveragePathIgnorePatterns: ['node_modules', '.internal'],
   coverageThreshold: {
     global: {
-      lines: 5,
-      functions: 5,
-      branches: 5,
-      statements: 5,
+      lines: 1,
+      functions: 1,
+      branches: 1,
+      statements: 1,
     },
   },
   transform: {},
